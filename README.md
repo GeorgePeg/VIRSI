@@ -50,7 +50,24 @@ Add a paired device:
 </ul>
 <p>The function returns an integer type representing the failure/success of the action (<code>esp_err_t</code>). If the returned value is <code>ESP_OK</code>, then the peer was added successfully. If the returned value is <code>ESP_ERR_ESPNOW_EXIST</code>, it means that the peer already exists. Another possible return value is <code>ESP_ERR_ESPNOW_FULL</code>, which indicates that we have reached the maximum number of peers that we can add.
 The value <code>ESP_ERR_ESPNOW_NOT_INIT</code> essentially informs us that we have forgotten to initialize ESP-NOW. Finally, the value <code>ESP_NOW_NO_MEM</code> indicates insufficient memory, which makes adding the peer impossible.
-</p>
+</p><br>
+Data sending function:
+<br>
+<code>esp_now_send(mac_addr, data, len)</code>:
+<p>The above function sends data to a device with the specified MAC address. The variable len refers to the length of the packet which depends on the version of the device (v1.0 or v2.0).
+</p><br>
+Peer existence check function:
+<br>
+<code>esp_now_is_peer_exist(mac_addr)</code>: <p>The peer existence check function essentially checks whether a MAC address already exists in the peer list.</p><br>
+Extra functions related to the <code>WiFi.h</code> library:
+<br>
+<ul>
+  <li><code>WiFi.mode(WIFI_STA)</code>: Sets the device to Station Mode.</li>
+  <li><code>WiFi.macAddress()</code>: Returns the MAC address of the device.</li>
+  <li><code>WiFi.disconnect()</code>: Disconnects the device from the current WiFi network (current AP- access point), without disabling WiFi functionality (the device can still operate as a STA or AP). However, if it is given a true argument, it disconnects and deletes the stored connection information (e.g. SSID/Password).
+</li>
+</ul>
+
 
 
 
