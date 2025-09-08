@@ -67,7 +67,7 @@ Extra functions related to the <code>WiFi.h</code> library:
   <li><code>WiFi.disconnect()</code>: Disconnects the device from the current WiFi network (current AP- access point), without disabling WiFi functionality (the device can still operate as a STA or AP). However, if it is given a true argument, it disconnects and deletes the stored connection information (e.g. SSID/Password).
 </li>
 </ul>
-In the <a href="Sender.ino">Sender.ino</a> and Receiver.ino files you can see how to easily implement sending a simple message from the sender to the receiver.
+In the <a href="Sender.ino">Sender.ino</a> and <a href="Receiver.ino">Receiver.ino</a> files you can see how to easily implement sending a simple message from the sender to the receiver.
 
 
 
