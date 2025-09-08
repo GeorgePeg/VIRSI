@@ -108,7 +108,7 @@ One technique we tried during the implementation of the project is that of <stro
   <li><strong>Attack/release time:</strong>times that show us how quickly the compression starts or stops.</li>
   <li><strong>Final gain (make-up gain):</strong>the value of the amplification that results after compression, in order to reach the desired volume.</li>
 </ul>
-RMS= √(1/N ∑_(n-1)^N▒〖x[n]〗^2 )
+The compressor calculates the RMS value of the intensity for each small time frame and checks if the signal is above the threshold value.
 
 
 
