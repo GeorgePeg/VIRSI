@@ -27,7 +27,8 @@ Before writing any commands, we must call the ESP-NOW API and start Wi-Fi, since
 ESP-NOW initialization/deinitialization functions:
 <ul>
   <li><code>esp_now_init()</code>: ESP-NOW initialization</li>
-  <li><code>esp_now_deinit()</code>: ESP-NOW deinitialization</li>  
+  <li><code>esp_now_deinit()</code>: ESP-NOW deinitialization</li>
+  <p class="text-warning">When the deinitialization function is called, all paired device information is deleted.</p>
 </ul>
 
 
