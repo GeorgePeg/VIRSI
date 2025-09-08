@@ -99,8 +99,8 @@ Here you can see the circuit diagram of our robot (our receiver):
 ![receiver_robot_circuit](https://github.com/user-attachments/assets/ad4ef4f6-60db-4aee-8c23-eea44ad8f434)
 
 # **Compression**
-<img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104564089.gif" width="350" height="350" />
-<img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104713461.gif" width="350" height="350" />
+<img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104564089.gif" width="350" height="350" /> Signal
+<img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104713461.gif" width="350" height="350" /> Compressed Signal
 One technique we tried during the implementation of the project is that of <strong>compression</strong>. With compression we can adjust <strong>the volume of our signal </strong> to be as stable as possible aurally, without losing words, simply by <strong>reducing large volume fluctuations and amplifying the weakest points</strong>. A compressor is characterized by the following:
 <ul>
   <li><strong>Threshold:</strong>the volume threshold above which compression begins. Measured in <strong>dB</strong>.</li>
@@ -115,6 +115,9 @@ The compressor calculates the RMS value of the intensity for each small time fra
   <li>y[n] the output (the smoothed signal) and</li>
   <li><strong>α</strong>, the smoothing factor for which <strong>α ϵ (0,1)</strong> holds.</li>
 </ul>
-
+<br>
+If <strong>α is close to 1, then the filter quickly follows changes in the input signal x[n] (fast attack)</strong>. If <strong>α is now close to 0, then the filter maintains (“holds”) the previous output term (y[n-1]) and changes very slowly (slow release)</strong>. In fact, the compressor uses two such filters. One with a large α and one with a small α.<br>
+The last stage in the compression process is the <strong>final amplification (make-up gain)</strong>. Upon completion of compression, a fixed gain in dB is added, so that in case our signal is ultimately lower, we can compensate for this loss to some extent. Thus, our signal x[n] after compression is complete will be given by the relation:
+<strong>x[n]^'=x_compressed[n] ⋅gain</strong> 
 
 
