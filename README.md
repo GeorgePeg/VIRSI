@@ -69,9 +69,6 @@ Extra functions related to the <code>WiFi.h</code> library:
 </ul>
 In the <a href="Sender.ino">Sender.ino</a> and <a href="Receiver.ino">Receiver.ino</a> files you can see how to easily implement sending a simple message from the sender to the receiver.
 
-
-
-
 # Voice Recognition Module V3
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a2810c22-e465-4ab1-9fae-5b934d4243b6" style="align-items: center; justify-content: center;" />
 <br>
@@ -84,7 +81,10 @@ Finally, the board has two control modes:
 <li>using general input pins (GIP).</li>
 </ul>
 <br>
-<p>The board is equipped with a built-in <strong>unidirectional MEMS (Micro-Electro-Mechanical Systems) microphone</strong>. The microphone is small in size, but at the same time low in consumption. It is designed to receive sound mainly from one direction (uni-directional), reducing environmental noise. Such a microphone is suitable for short-distance voice commands (≈ 20-50 centimeters for optimal accuracy – approximately 99% in ideal environmental conditions).In addition, to the VRM, through the audio jack, we can connect an external microphone, also known as a gooseneck, which is equipped with a sponge for better attenuation of the noise received by the microphone (e.g. from breathing or air).</p>
+<p>The board is equipped with a built-in <strong>unidirectional MEMS (Micro-Electro-Mechanical Systems) microphone</strong>. The microphone is small in size, but at the same time low in consumption. It is designed to receive sound mainly from one direction (uni-directional), reducing environmental noise. Such a microphone is suitable for short-distance voice commands (≈ 20-50 centimeters for optimal accuracy – approximately 99% in ideal environmental conditions).In addition, to the VRM, through the audio jack, we can connect an external microphone, also known as a gooseneck, which is equipped with a sponge for better attenuation of the noise received by the microphone (e.g. from breathing or air).</p><br>
+The voice recognition board supports user-trained commands. It can be trained locally with <strong>up to 80 words/commands</strong>, with the ability to support <strong>up to 7 words/commands active at a time </strong>, meaning the VRM "listens" and recognizes only these seven.
+<img width="568" height="391" alt="image" src="https://github.com/user-attachments/assets/354a046f-1300-4327-90f1-e9dbeb5bd54c" />
+
 
 
 
