@@ -126,4 +126,4 @@ If <strong>α is close to 1, then the filter quickly follows changes in the inpu
 The last stage in the compression process is the <strong>final amplification (make-up gain)</strong>. Upon completion of compression, a fixed gain in dB is added, so that in case our signal is ultimately lower, we can compensate for this loss to some extent. Thus, our signal x[n] after compression is complete will be given by the relation:
 <strong>x[n]^'=x_compressed[n] ⋅gain</strong>. <br>
 Through compression, speech (e.g. in a video) becomes <strong>more coherent and understandable</strong>.Soft words are not lost from the signal and are more easily perceived by the human ear.Finally, bold words do not distort the quality of our signal.
-
+You can a find a sample Matlab code inside <a href="compressor.m">compressor.m</a> file that reads an audio file (.wav file) and performs the method of compression using an EMA filter. I suggest you to record yourselves and put your record file inside the <code>audioread()</code> function.
