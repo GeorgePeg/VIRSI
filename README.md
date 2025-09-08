@@ -99,8 +99,8 @@ Here you can see the circuit diagram of our robot (our receiver):
 ![receiver_robot_circuit](https://github.com/user-attachments/assets/ad4ef4f6-60db-4aee-8c23-eea44ad8f434)
 
 # **Compression**
-<img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104713461.gif" width="350" height="350" />
 <img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104564089.gif" width="350" height="350" />
+<img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104713461.gif" width="350" height="350" />
 One technique we tried during the implementation of the project is that of <strong>compression</strong>. With compression we can adjust <strong>the volume of our signal </strong> to be as stable as possible aurally, without losing words, simply by <strong>reducing large volume fluctuations and amplifying the weakest points</strong>. A compressor is characterized by the following:
 <ul>
   <li><strong>Threshold:</strong>the volume threshold above which compression begins. Measured in <strong>dB</strong>.</li>
@@ -108,7 +108,13 @@ One technique we tried during the implementation of the project is that of <stro
   <li><strong>Attack/release time:</strong>times that show us how quickly the compression starts or stops.</li>
   <li><strong>Final gain (make-up gain):</strong>the value of the amplification that results after compression, in order to reach the desired volume.</li>
 </ul>
-The compressor calculates the RMS value of the intensity for each small time frame and checks if the signal is above the threshold value.
+The compressor calculates the RMS value of the intensity for each small time frame and checks if the signal is above the threshold value. If this is the case, then it reduces the volume based on the compression ratio. For example, if the compression ratio is 4:1 (i.e. ratio = 4dB), then for every 4dB above the threshold, it reduces it by 1dB. It then uses the attack and release times to transition smoothly (fast attack and slower release).To achieve this smooth transition, the compressor uses a filter called an <strong>EMA filter (Exponential Moving Average)</strong>. This filter is a <strong>single-pole (first order) low-pass Infinite Impulse Response (IIR) filter </strong>, which is used in signal processing and is given by the very simple mathematical relationship: 
+<strong>y[n]=αx[n]+(1-α)y[n-1]</strong> where: 
+<ul>
+  <li>x[n] the input (the original signal)</li>
+  <li>y[n] the output (the smoothed signal) and</li>
+  <li><strong>α</strong>, the smoothing factor for which <strong>α ϵ (0,1)</strong> holds.</li>
+</ul>
 
 
 
