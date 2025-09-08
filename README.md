@@ -30,7 +30,7 @@ Finally, the board has two control modes:
 <li>using general input pins (GIP).</li>
 </ul>
 <br>
-<p>The board is equipped with a built-in <strong>unidirectional MEMS (Micro-Electro-Mechanical Systems) microphone</strong>. The microphone is small in size, but at the same time low in consumption. It is designed to receive sound mainly from one direction (uni-directional), reducing environmental noise.</p>
+<p>The board is equipped with a built-in <strong>unidirectional MEMS (Micro-Electro-Mechanical Systems) microphone</strong>. The microphone is small in size, but at the same time low in consumption. It is designed to receive sound mainly from one direction (uni-directional), reducing environmental noise. Such a microphone is suitable for short-distance voice commands (≈ 20-50 centimeters for optimal accuracy – approximately 99% in ideal environmental conditions).In addition, to the VRM, through the audio jack, we can connect an external microphone, also known as a gooseneck, which is equipped with a sponge for better attenuation of the noise received by the microphone (e.g. from breathing or air).</p>
 
 
 
