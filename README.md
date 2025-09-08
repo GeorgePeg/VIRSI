@@ -32,12 +32,15 @@ ESP-NOW initialization/deinitialization functions:
 </ul>
 <br>
 Return to sender function:
+<br>
 <code>esp_now_register_send_cb(dataReceive)</code>:
 <p>By calling the above function, we declare the function we have defined as a confirmation reception function, let's say dataReceive, which is called when the sending of a message from the sender to the recipient is complete.</p><br>
 Return function to the recipient:
+<br>
 <code>esp_now_register_recv_cb(dataReceive)</code>:
 <p>By calling the above function, we declare the function we have defined as a confirmation reception function, let's say dataReceive, which is called when a message is received by the recipient.</p><br>
 Add a paired device:
+<br>
 <code>esp_now_add_peer(&peerInfo)</code>: Add a new device/peer with MAC address.
 <p>This function takes as an argument a pointer to a struct, esp_now_peer_info_t, containing information such as the MAC address, the channel, or whether encryption is required. The channel range of paired devices is from 0 to 14.If the channel is set to 0, data is sent on the current channel, otherwise the channel must be set to the channel the local device is on. The following applies to <code>peerInfo</code>:</p>
 <ul>
@@ -45,7 +48,9 @@ Add a paired device:
   <li><code>peerInfo.channel</code>: Integer number from 1-14.</li>
   <li><code>peerInfo.encrypt</code>: True/false value to enable or disable encryption.</li>
 </ul>
-
+<p>The function returns an integer type representing the failure/success of the action (<code>esp_err_t</code>). If the returned value is <code>ESP_OK</code>, then the peer was added successfully. If the returned value is <code>ESP_ERR_ESPNOW_EXIST</code>, it means that the peer already exists. Another possible return value is <code>ESP_ERR_ESPNOW_FULL</code>, which indicates that we have reached the maximum number of peers that we can add.
+The value <code>ESP_ERR_ESPNOW_NOT_INIT</code> essentially informs us that we have forgotten to initialize ESP-NOW. Finally, the value <code>ESP_NOW_NO_MEM</code> indicates insufficient memory, which makes adding the peer impossible.
+</p>
 
 
 
