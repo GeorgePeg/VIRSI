@@ -118,6 +118,6 @@ The compressor calculates the RMS value of the intensity for each small time fra
 <br>
 If <strong>α is close to 1, then the filter quickly follows changes in the input signal x[n] (fast attack)</strong>. If <strong>α is now close to 0, then the filter maintains (“holds”) the previous output term (y[n-1]) and changes very slowly (slow release)</strong>. In fact, the compressor uses two such filters. One with a large α and one with a small α.<br>
 The last stage in the compression process is the <strong>final amplification (make-up gain)</strong>. Upon completion of compression, a fixed gain in dB is added, so that in case our signal is ultimately lower, we can compensate for this loss to some extent. Thus, our signal x[n] after compression is complete will be given by the relation:
-<strong>x[n]^'=x_compressed[n] ⋅gain</strong> 
-
+<strong>x[n]^'=x_compressed[n] ⋅gain</strong> <br>
+Through compression, speech (e.g. in a video) becomes <strong>more coherent and understandable</strong>.Soft words are not lost from the signal and are more easily perceived by the human ear.Finally, bold words do not distort the quality of our signal
 
