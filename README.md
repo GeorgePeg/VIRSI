@@ -16,8 +16,12 @@ ESP-NOW stands out because:
 <li>It uses the <strong>ECDH and AES-128 algorithms</strong> that make data transmission more secure.</li>
 <li>In normal mode, it has a range of <strong>approximately 220-250 meters</strong> in open space, while in long range mode it can reach <strong>up to 480 meters</strong>.</li>
 </ol>
-<br>
 ESP-NOW uses a vendor-specific action framework for data transmission. The default bit rate is <strong>1Mbps</strong>.
 
-# 
+# Voice Recognition Module V3
+<img width="431" height="431" alt="image" src="https://github.com/user-attachments/assets/a2810c22-e465-4ab1-9fae-5b934d4243b6" />
+<br>
+Elechouse's VRM (Voice Recognition Module V3) is a standalone voice recognition unit, designed to be easily integrated into systems that operate via voice commands from the user, either with the help of microcontrollers such as Arduino, ESP or STEM32, or microprocessors such as Raspberry Pi, without requiring any kind of connection to an external computer or even a connection to the cloud.
+
+
 
