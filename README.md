@@ -98,6 +98,9 @@ _In case you want to supply the VRM V3 with 5V, you will have to use the voltage
 Here you can see the circuit diagram of our robot (our receiver):
 ![receiver_robot_circuit](https://github.com/user-attachments/assets/ad4ef4f6-60db-4aee-8c23-eea44ad8f434)
 
+The final codes for both the sender and the receiver can be found inside <a href="Sender_final.ino">Sender_final.ino</a> and 
+<a href="">Receiver.ino</a> files.
+
 # **Voice: What is it?**
 According to **Shannon's information theory**, a message represented as a sequence of discrete symbols can be quantified based on its information content in bits, where the information transmission rate is measured in **bits/second (bps)**. During speech, the information being transmitted is encoded in the form of a continuously changing (analog) waveform, which can be transmitted, recorded (stored), processed, and finally decoded by a listener. The elementary analog form of the message is an acoustic waveform which we call a **voice sign**.
 
