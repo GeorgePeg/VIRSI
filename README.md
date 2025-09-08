@@ -1,5 +1,5 @@
 # VIRSI
-VIRSI (Voice Interface for Robotic Systems Interaction): Control through ESP-NOW and your voice a robot. The robot we will control is a car. This is a project within the framework of the "Sound and Music Processing" course which combines wireless networks, robotics and signal processing.
+VIRSI (Voice Interface for Robotic Systems Interaction): Control through ESP-NOW and your voice a robot. The robot we will control is a car. This is a project within the framework of the "Sound and Music Processing" course that combines wireless networks, robotics and signal processing.
 
 
 # **ESP-NOW - What is it and how to use it**:
