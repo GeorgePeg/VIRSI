@@ -86,7 +86,14 @@ Finally, the board has two control modes:
 <p>The voice recognition board supports user-trained commands. It can be trained locally with <strong>up to 80 words/commands</strong>, with the ability to support <strong>up to 7 words/commands active at a time </strong>, meaning the VRM "listens" and recognizes only these seven.</p><br>
 <img width="568" height="391" alt="image" src="https://github.com/user-attachments/assets/354a046f-1300-4327-90f1-e9dbeb5bd54c" />
 <p>Each word is stored in the board's internal flash with a specific id. Each time it successfully recognizes one of the active words/commands, it returns the corresponding id number of that word/command, via UART communication (i.e. via Tx/Rx).The choice of language in which the VRM will be "trained" does not play a role, since the operation of the board is based <strong>entirely on sound and not on any specific language </strong>.All voice commands are stored in a common group for all. As shown in the diagram
-above. On the board is the recognizer, which acts as a container in which the voice commands that can be recognized are loaded. In essence, it functions as a list in which the elements we want each time are stored.</p>
+above. On the board is the recognizer, which acts as a container in which the voice commands that can be recognized are loaded. In essence, it functions as a list in which the elements we want each time are stored.</p><br>
+
+# **Headphone circuit**
+For the project, a custom pair of headphones was created in which the transmitter circuit was integrated.This circuit includes the Voice Recognition Module, the speakers from the headphones, and an ESP32-S3 which performs the job of the sender.
+![sender_circuit](https://github.com/user-attachments/assets/059904c7-31f2-4766-89aa-b21a01781dc9)
+
+
+
 
 
 
