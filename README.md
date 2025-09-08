@@ -22,6 +22,12 @@ ESP-NOW uses a vendor-specific action framework for data transmission. The defau
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a2810c22-e465-4ab1-9fae-5b934d4243b6" style="align-items: center; justify-content: center;" />
 <br>
 Elechouse's VRM (Voice Recognition Module V3) is a standalone voice recognition unit, designed to be easily integrated into systems that operate via voice commands from the user, either with the help of microcontrollers such as Arduino, ESP or STEM32, or microprocessors such as Raspberry Pi, without requiring any kind of connection to an external computer or even a connection to the cloud.
+The voice recognition module operates at 3.3V-5V DC (direct current), is small in size (31mm x 50mm), which makes it ideal for use in robotic systems for motion control, for “one-shot” commands in IoT systems, for home automation uses (smart home), etc.
+Finally, the board has two control modes:
+<ul>
+<li>via serial port and </li>
+<li>using general input pins (GIP).</li>
+</ul>
 
 
 
