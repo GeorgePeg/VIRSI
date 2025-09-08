@@ -21,8 +21,8 @@ ESP-NOW uses a vendor-specific action framework for data transmission. The defau
 **Basic ESP-NOW Commands**:
 Before writing any commands, we must call the ESP-NOW API and start Wi-Fi, since ESP-NOW is a Wi-Fi type wireless network (IEEE 802.11 b/g/n). This is done using the Arduino IDE as follows:
 <ul>
-  <li>#include <WiFi.h></li>
-  <li>#include <esp_now.h></li>  
+  <li><code>#include <WiFi.h> </WiFi.h></code></li>
+  <li><code>#include <esp_now.h></esp_now.h></code></li>  
 </ul>
 ESP-NOW initialization/deinitialization functions:
 <ul>
