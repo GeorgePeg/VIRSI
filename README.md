@@ -99,8 +99,10 @@ Here you can see the circuit diagram of our robot (our receiver):
 ![receiver_robot_circuit](https://github.com/user-attachments/assets/ad4ef4f6-60db-4aee-8c23-eea44ad8f434)
 
 # **Compression**
+<img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104713461.gif" width="350" height="350" />
 <img src="https://6.eewimg.cn/news/uploadfile/2023/0130/1675069104564089.gif" width="350" height="350" />
-One technique we tried during the implementation of the project is that of **compression**. With compression we can adjust **the volume of our signal** to be as stable as possible aurally, without losing words, simply by **reducing large volume fluctuations and amplifying the weakest points**. A compressor is characterized by the following:
+
+One technique we tried during the implementation of the project is that of <strong>compression</strong>. With compression we can adjust <strong>the volume of our signal </strong> to be as stable as possible aurally, without losing words, simply by <strong>reducing large volume fluctuations and amplifying the weakest points</strong>. A compressor is characterized by the following:
 <ul>
   <li><strong>Threshold:</strong>the volume threshold above which compression begins. Measured in <strong>dB</strong>.</li>
   <li><strong>Compression ratio:</strong>the rate of decrease in intensity beyond the threshold.</li>
