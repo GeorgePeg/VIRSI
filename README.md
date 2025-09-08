@@ -18,6 +18,16 @@ ESP-NOW stands out because:
 </ol>
 ESP-NOW uses a vendor-specific action framework for data transmission. The default bit rate is <strong>1Mbps</strong>.
 
+**Basic ESP-NOW Commands**:
+Before writing any commands, we must call the ESP-NOW API and start Wi-Fi, since ESP-NOW is a Wi-Fi type wireless network (IEEE 802.11 b/g/n). This is done using the Arduino IDE as follows:
+<code>#include <WiFi.h> </code>
+#include <esp_now.h>
+
+
+
+
+
+
 # Voice Recognition Module V3
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a2810c22-e465-4ab1-9fae-5b934d4243b6" style="align-items: center; justify-content: center;" />
 <br>
