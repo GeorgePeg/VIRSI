@@ -91,10 +91,9 @@ above. On the board is the recognizer, which acts as a container in which the vo
 # **Headphone circuit**
 For the project, a custom pair of headphones was created in which the transmitter circuit was integrated.This circuit includes the Voice Recognition Module, the speakers from the headphones, and an ESP32-S3 which performs the job of the sender.
 ![sender_circuit](https://github.com/user-attachments/assets/059904c7-31f2-4766-89aa-b21a01781dc9)
-As you can see, in the circuit there is a voltage divider between the transmitter of the Voice Recognition Module and the receiver of the ESP32-S3 used in the sender. This voltage divider is included for two reasons:
-<ul>
-  <li>In case you want to supply the VRM V3 with 5V, you will have to use the voltage divider because the pins of the ESP32-S3 are not 5V tolerant.</li>
-</ul>
+As you can see, in the circuit there is a voltage divider between the transmitter of the Voice Recognition Module and the receiver of the ESP32-S3 used in the sender. This voltage divider is included for one reason:
+_In case you want to supply the VRM V3 with 5V, you will have to use the voltage divider because the **pins of the ESP32-S3 are not 5V tolerant**._You will have to reduce the voltage down to 3.3V.
+
 
 
 
